@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h1>lets display the products</h1>
+    <ul>
+       
+        <% products.forE(function(product){
+            %>
+            <li> <%= product.title %>
+            <button onclick="deleteProduct( 'sdfs')">Delete</button>
+            </li>
+            <%
+        })%>
+    </ul>
+    <script>
+        function deleteProduct (product){
+            consolee.log(JSON.stringify(product))
+            // fetch("http://localhost:3700/products"/+product['_id'])
+            // .then((res)=>{console.log(res)})
+            // .catch((err)=>{console.log(err)})
+        }
+    </script>
+
+    
+</body>
+</html>
